@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div id="header">
+
+    </div>
+    <div class="container-fluid">
+     
+         <!-- Slider -->
+          <div class="row">
+            <div class="col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+          </div>
+          <!-- Slider End -->
+           <!-- Intro -->
+            <div class="container bg-success text-white rounded mt-4" data-aos="fade-right">
+                <div class="row">
+                    <h1 class="text-white">Inroduction</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nam adipisci distinctio voluptate blanditiis unde fugiat, labore a placeat illum nostrum quibusdam rem quod cupiditate autem facilis ipsa voluptatum corporis odio, aliquam, tenetur eveniet reprehenderit eius! Nemo nesciunt aliquam nostrum non. Ut saepe sequi, dignissimos soluta adipisci nam expedita temporibus facilis veritatis provident ullam error delectus. Rerum iusto animi dolorum laborum eveniet ab cumque tempora tempore! Quisquam a quidem obcaecati atque culpa itaque tenetur deserunt, eaque saepe natus, recusandae eligendi? Fuga pariatur dolorem aperiam </p>              
+                </div>
+                <button class="btn btn-outline-light mb-3">Proceed -></button>
+            </div>
+            <!-- Intro End -->
+             <!-- Main Section -->
+             <div class="row mt-4" data-aos="fade-left">
+                <h1 class="text-center text-success">Categories</h1>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m1">
+                               Add To Cart
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="m1" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Product 1</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Price: $200</p>
+                          <p>Quantity: 200</p>
+                          <p>Color: Red, Blue , Green</p>
+                          <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste earum facere fuga harum libero animi sequi eos aliquid amet aut, accusamus error, numquam quasi odit nostrum repellendus voluptas quam ex.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Save</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#m2" class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="m2" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Product 2</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Price: $200</p>
+                          <p>Quantity: 200</p>
+                          <p>Color: Red, Blue , Green</p>
+                          <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste earum facere fuga harum libero animi sequi eos aliquid amet aut, accusamus error, numquam quasi odit nostrum repellendus voluptas quam ex.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Save</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/4.jpg" alt="" height="250" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Sports 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique repellat quae veritatis mollitia ex, reiciendis dicta quo totam expedita quod placeat in alias quidem eligendi! Quis aperiam natus impedit.</p>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!-- Main Section -->
+              <div class="row mt-4">
+                <div class="container" data-aos="fade-up">
+                    <h2 class="h2 text-center text-success">Football Statistics</h2>
+                    <table class="table table-responsive table-success table-bordered table-hover table-striped">
+                        <tr>
+                            <th>Top Scorers</th>
+                            <th>Assists</th>
+                            <th>Team Performance </th>
+                            <th>Player Awards</th>
+                            <th>Tournament Statistics</th>
+                            <th>Club and National Team Achievements</th>
+                            <th>Key Performance Metrics</th>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo:</td>
+                            <td>Cristiano Ronaldo: Over 200 career assists.</td>
+                            <td>The Ballon d'Or, awarded to the world's best player, has been dominated by Lionel Messi and Cristiano Ronaldo:</td>
+                            <td>2010: Spain (Won 1st World Cup).</td>
+                            <td>2010-2014: Inter Milan (2010), Barcelona (2011, 2015), Bayern Munich (2013, 2020), Real Madrid (2014, 2016, 2017, 2018).</td>
+                            <td>First to score 100 goals in the UEFA Champions League.</td>
+                            <td>Leading scorer in international football (over 120 goals with Portugal).</td>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo:</td>
+                            <td>Cristiano Ronaldo: Over 200 career assists.</td>
+                            <td>The Ballon d'Or, awarded to the world's best player, has been dominated by Lionel Messi and Cristiano Ronaldo:</td>
+                            <td>2010: Spain (Won 1st World Cup).</td>
+                            <td>2010-2014: Inter Milan (2010), Barcelona (2011, 2015), Bayern Munich (2013, 2020), Real Madrid (2014, 2016, 2017, 2018).</td>
+                            <td>First to score 100 goals in the UEFA Champions League.</td>
+                            <td>Leading scorer in international football (over 120 goals with Portugal).</td>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo:</td>
+                            <td>Cristiano Ronaldo: Over 200 career assists.</td>
+                            <td>The Ballon d'Or, awarded to the world's best player, has been dominated by Lionel Messi and Cristiano Ronaldo:</td>
+                            <td>2010: Spain (Won 1st World Cup).</td>
+                            <td>2010-2014: Inter Milan (2010), Barcelona (2011, 2015), Bayern Munich (2013, 2020), Real Madrid (2014, 2016, 2017, 2018).</td>
+                            <td>First to score 100 goals in the UEFA Champions League.</td>
+                            <td>Leading scorer in international football (over 120 goals with Portugal).</td>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo:</td>
+                            <td>Cristiano Ronaldo: Over 200 career assists.</td>
+                            <td>The Ballon d'Or, awarded to the world's best player, has been dominated by Lionel Messi and Cristiano Ronaldo:</td>
+                            <td>2010: Spain (Won 1st World Cup).</td>
+                            <td>2010-2014: Inter Milan (2010), Barcelona (2011, 2015), Bayern Munich (2013, 2020), Real Madrid (2014, 2016, 2017, 2018).</td>
+                            <td>First to score 100 goals in the UEFA Champions League.</td>
+                            <td>Leading scorer in international football (over 120 goals with Portugal).</td>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo:</td>
+                            <td>Cristiano Ronaldo: Over 200 career assists.</td>
+                            <td>The Ballon d'Or, awarded to the world's best player, has been dominated by Lionel Messi and Cristiano Ronaldo:</td>
+                            <td>2010: Spain (Won 1st World Cup).</td>
+                            <td>2010-2014: Inter Milan (2010), Barcelona (2011, 2015), Bayern Munich (2013, 2020), Real Madrid (2014, 2016, 2017, 2018).</td>
+                            <td>First to score 100 goals in the UEFA Champions League.</td>
+                            <td>Leading scorer in international football (over 120 goals with Portugal).</td>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo:</td>
+                            <td>Cristiano Ronaldo: Over 200 career assists.</td>
+                            <td>The Ballon d'Or, awarded to the world's best player, has been dominated by Lionel Messi and Cristiano Ronaldo:</td>
+                            <td>2010: Spain (Won 1st World Cup).</td>
+                            <td>2010-2014: Inter Milan (2010), Barcelona (2011, 2015), Bayern Munich (2013, 2020), Real Madrid (2014, 2016, 2017, 2018).</td>
+                            <td>First to score 100 goals in the UEFA Champions League.</td>
+                            <td>Leading scorer in international football (over 120 goals with Portugal).</td>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo:</td>
+                            <td>Cristiano Ronaldo: Over 200 career assists.</td>
+                            <td>The Ballon d'Or, awarded to the world's best player, has been dominated by Lionel Messi and Cristiano Ronaldo:</td>
+                            <td>2010: Spain (Won 1st World Cup).</td>
+                            <td>2010-2014: Inter Milan (2010), Barcelona (2011, 2015), Bayern Munich (2013, 2020), Real Madrid (2014, 2016, 2017, 2018).</td>
+                            <td>First to score 100 goals in the UEFA Champions League.</td>
+                            <td>Leading scorer in international football (over 120 goals with Portugal).</td>
+                        </tr>
+    
+                      
+    
+                    </table>
+                </div>
+              
+              </div>
+               <!-- Footer -->
+    </div>
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration:1000,
+                once:false
+            }
+        );
+        window.addEventListener('scroll', function() {
+        AOS.refresh(); // This forces AOS to re-check the animations when scrolling
+    });
+    </script>
+</body>
+</html>

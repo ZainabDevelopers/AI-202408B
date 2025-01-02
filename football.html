@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+<div id="header"></div>
+    <div class="container-fluid">
+      
+             <div class="row">
+                <div class="col-lg-12">   
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                          <li class="breadcrumb-item"><a href="football.html">Products</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Football</li>
+                        </ol>
+                      </nav>
+                </div>
+             </div>
+             <!-- ------------------------ -->
+              <h1 class="display-4 my-4 text-success text-center">Football</h1>
+              <div class="container">
+                <div class="row mt-3" id="mycards">
+                </div>
+                <!-- Modal Template -->
+                <div class="modal fade" id="modal-{{i}}" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">{{Name}}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                       <img src="{{Image}}" alt="" width="200" height="200">
+                       <p>Price: {{Price}}</p>
+                       <p>Category: {{Category}}</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Assuming products is an array of product objects
+        for (var i = 0; i < products.length; i++) {
+            var product = products[i];
+            document.getElementById("mycards").innerHTML += `
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="card" style="width: 18rem;" data-aos="fade-right">
+                <img src="${product.Image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${product.Name}</h5>
+                    <p class="card-text">${product.Category}</p>
+                    <p class="card-text">${product.Price}</p>
+                    <!-- Fix typo here and add modal toggle -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-${i}">Add To Cart</button>
+                </div>
+             </div>
+            </div>`;
+
+            // Dynamically adding modal content
+            document.body.innerHTML += `
+            <div class="modal fade" id="modal-${i}" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">${product.Name}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src='${product.Image}' width='350' >
+                            <p>Price: ${product.Price}</p>
+                            <p>Category: ${product.Category}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        }
+    </script>
+    <div id="footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init(
+          {
+              duration:1000,
+              once:true
+          }
+      );
+  </script>
+</body>
+</html>
